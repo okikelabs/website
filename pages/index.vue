@@ -4,7 +4,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto py-20 px-4">
+  <div class="max-w-4xl mx-auto lg:py-20 pt-8 pb-20 px-4">
     <!--  -->
     <!-- navigation -->
     <header class="w-full">
@@ -20,8 +20,8 @@ import ProjectCard from '@/components/ProjectCard.vue'
       </nav>
     </header>
 
-    <main class="flex flex-col mt-12">
-      <section class="flex flex-col gap-4 text-foreground/70">
+    <main class="flex flex-col mt-10">
+      <section class="flex flex-col gap-4 text-foreground/70 text-lg">
         <p>
           Okikelabs is a product studio operating out of Nigeria, committed to
           building purposeful SaaS solutions with a global reach. Our approach
