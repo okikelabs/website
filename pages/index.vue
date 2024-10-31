@@ -1,18 +1,19 @@
 <script lang="ts" setup>
 import projects from '@/data/projects'
 import ProjectCard from '@/components/ProjectCard.vue'
+import Footer from '@/components/Footer.vue'
+import Logo from '@/components/Logo.vue'
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto lg:py-20 pt-8 pb-20 px-4">
+  <div
+    class="max-w-4xl mx-auto lg:pt-20 pt-8 px-4 min-h-screen w-full flex flex-col"
+  >
     <!--  -->
     <!-- navigation -->
     <header class="w-full">
       <nav class="flex justify-between items-center">
-        <div class="flex items-center">
-          <nuxt-img src="/images/icon.svg" width="32" height="32" />
-          <span class="text-3xl font-bold">Okikelabs</span>
-        </div>
+        <Logo />
 
         <!-- <div>
           <nuxt-link class="text-lg underline" to="/blog">Blog</nuxt-link>
@@ -20,7 +21,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
       </nav>
     </header>
 
-    <main class="flex flex-col mt-10">
+    <main class="flex-1 my-10">
       <section class="flex flex-col gap-4 text-foreground/70 text-lg">
         <p>
           Okikelabs is a product studio operating out of Nigeria, committed to
@@ -55,6 +56,10 @@ import ProjectCard from '@/components/ProjectCard.vue'
           ></ProjectCard>
         </ul>
       </section>
+
+      <!-- <hr class="my-8 border-gray-200/70" /> -->
     </main>
+
+    <Footer />
   </div>
 </template>
