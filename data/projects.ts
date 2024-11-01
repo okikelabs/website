@@ -9,9 +9,9 @@ export default [
     status: 'active',
   },
   {
-    title: 'App Reply',
-    description: 'Reply to app store reviews on autopilot',
-    url: 'https://www.nuxtsaaskit.com',
+    title: '[Stealth Project]',
+    description: 'This is a stealth project',
+    url: '#',
     icon: 'favicon.ico',
     year: '2024',
     status: 'stealth',
