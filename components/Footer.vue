@@ -18,7 +18,7 @@ import Logo from '@/components/Logo.vue'
           <li><a href="#">About</a></li>
           <li><nuxt-link to="/blog">Blog</nuxt-link></li>
 
-          <li><a href="mailto:hello@okikelabs.com">Contact us</a></li>
+          <li><a href="mailto:admin@okikelabs.com">Contact us</a></li>
         </ul>
       </div>
 
