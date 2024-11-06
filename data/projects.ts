@@ -10,13 +10,21 @@ export default [
     status: 'active',
   },
   {
-    title: 'Wedding band',
-    description: 'Your One-Stop Wedding Planner.',
+    title: 'Stay Tuned😉',
+    description: 'More products coming soon...',
     url: '#',
-    icon: 'favicon.ico',
+    icon: 'coming-soon.svg',
     year: '2024',
     status: 'coming-soon',
   },
+  // {
+  //   title: 'Wedding band',
+  //   description: 'Your One-Stop Wedding Planner.',
+  //   url: '#',
+  //   icon: 'favicon.ico',
+  //   year: '2024',
+  //   status: 'coming-soon',
+  // },
   // {
   //   title: 'DevFlow',
   //   description:
