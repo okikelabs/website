@@ -3,6 +3,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2024-10-30',
   modules: ['@nuxt/image', '@nuxtjs/tailwindcss', 'shadcn-nuxt', '@nuxtjs/seo'],
+  nitro: {
+    preset: 'static',
+  },
+  hooks: {
+    close: () => {
+      process.exit(0)
+    },
+  },
   shadcn: {
     /**
      * Prefix for all the imported component
