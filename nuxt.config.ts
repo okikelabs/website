@@ -4,13 +4,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-10-30',
   modules: ['@nuxt/image', '@nuxtjs/tailwindcss', 'shadcn-nuxt', '@nuxtjs/seo'],
   nitro: {
-    preset: 'cloudflare_pages',
+    preset: 'static',
   },
-  hooks: {
-    close: () => {
-      process.exit(0)
-    },
-  },
+  // hooks: {
+  //   close: () => {
+  //     process.exit(0)
+  //   },
+  // },
   shadcn: {
     /**
      * Prefix for all the imported component
