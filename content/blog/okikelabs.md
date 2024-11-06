@@ -1,7 +1,7 @@
 ---
 title: 'Okikelabs is live'
 description: 'meta description of the page'
-draft: true
+draft: false
 date: '2024-10-30'
 author: 'Emmanuel Raymond'
 slug: 'okikelabs'

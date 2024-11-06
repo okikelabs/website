@@ -1,7 +1,7 @@
 ---
 title: 'Introducing Nuxt SaaS Kit'
 description: 'meta description'
-draft: true
+draft: false
 date: '2024-10-14'
 author: 'Emmanuel Raymond'
 slug: 'nuxt-saas-kit'
