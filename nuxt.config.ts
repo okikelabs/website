@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-10-30',
   modules: ['@nuxt/image', '@nuxtjs/tailwindcss', 'shadcn-nuxt', '@nuxtjs/seo'],
   nitro: {
-    preset: 'static',
+    preset: 'cloudflare_pages',
   },
   hooks: {
     close: () => {
