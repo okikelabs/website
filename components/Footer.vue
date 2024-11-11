@@ -61,8 +61,13 @@ import Logo from '@/components/Logo.vue'
       </div>
     </div>
 
-    <div class="border-t border-t-gray-200/70 pb-4">
-      <small class="block pt-6"
+    <div
+      class="border-t border-t-gray-200/70 pb-4 pt-6 lg:flex justify-between items-center w-full text-foreground/50"
+    >
+      <!-- <small>Built with ❤️ by Okikelabs</small> -->
+      <small class="block">Built by Emmanuel Raymond and Tochukwu Alor</small>
+
+      <small class="block pt-6 lg:pt-0"
         >Copyright &copy; {{ new Date().getFullYear() }}. Okikelabs Technologies
         Ltd - All rights reserved</small
       >
