@@ -59,7 +59,6 @@ const statusConfig: StatusConfigMap = {
 
 const badgeClasses = computed(() => {
   const config = statusConfig[props.status.toLowerCase()]
-  console.log(config)
   return [config.background, config.text]
 })
 

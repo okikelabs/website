@@ -7,16 +7,17 @@ import ProjectCard from '@/components/ProjectCard.vue'
   <div>
     <section class="flex flex-col gap-4 text-foreground/70 text-lg">
       <p>
-        Okikelabs is a product studio operating out of Nigeria, committed to
-        building purposeful SaaS solutions with a global reach. Our approach
-        goes beyond trends — we’re focused on creating products that bring
-        genuine value and stand the test of time.
+        Okikelabs is a product studio that specializes in building SaaS products
+        with a global reach. We’re passionate about creating innovative products
+        that solve real-world problems. Our approach goes beyond trends — we’re
+        focused on creating products that bring genuine value and stand the test
+        of time.
       </p>
 
       <p>
-        We’re a team of two passionate, bootstrapped developers, who turn ideas
-        into meaningful SaaS products that solve real-world problems. We
-        prioritize innovation over boundaries, focusing on meaningful solutions
+        We’re a small, bootstrapped team of builders united by our passion for
+        turning ideas into impactful SaaS products that solve real-world
+        problems. Our approach is to focus on creating meaningful solutions
         rather than being confined to any specific niche or outcome.
       </p>
     </section>

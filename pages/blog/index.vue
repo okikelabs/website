@@ -1,8 +1,5 @@
 <script setup>
-// const { data } = await useAsyncData('home', () => queryContent('/').findOne())
 const contentQuery = await queryContent('blog').sort({ date: 1 }).find()
-
-// console.log(contentQuery)
 </script>
 
 <template>
