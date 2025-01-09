@@ -1,9 +1,13 @@
 /* CUSTOME STYLES FOR TAILWINF TYPOGRAPHY */
 
-.prose h2 a {
+/* .prose h2 a {
+  text-decoration: none;
+} */
+
+.prose :is(h1, h2, h3, h4, h5, h6) a {
   text-decoration: none;
 }
 
-.prose h2 {
+.prose :is(h1, h2, h3, h4, h5, h6) {
   @apply mt-0 mb-5 text-2xl font-extrabold;
 }
