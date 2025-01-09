@@ -2,7 +2,7 @@ export default [
   {
     title: 'Nuxt SaaS Kit',
     description:
-      'The complete Nuxt starter kit to build a robust and market-ready.',
+      'The complete Nuxt starter kit to build a robust and market-ready SaaS project.',
     // 'The complete Nuxt starter kit to build a robust and market-ready SaaS',
     url: 'https://www.nuxtsaaskit.com',
     icon: 'favicon.ico',

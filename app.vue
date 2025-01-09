@@ -7,6 +7,8 @@
 </template>
 
 <style>
+@import './assets/css/styles.css';
+
 body {
   background-color: #f1f5f9;
 }

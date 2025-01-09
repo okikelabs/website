@@ -7,9 +7,9 @@ import ProjectCard from '@/components/ProjectCard.vue'
   <div>
     <section class="flex flex-col gap-4 text-foreground/70 text-lg">
       <p>
-        Okikelabs is a product studio that specializes in building SaaS products
+        Okikelabs is a startup studio that specializes in building SaaS products
         with a global reach. We’re passionate about creating innovative products
-        that solve real-world problems. Our approach goes beyond trends — we’re
+        that solve real-world problems. Our approach goes beyond trends, we’re
         focused on creating products that bring genuine value and stand the test
         of time.
       </p>

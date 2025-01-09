@@ -23,7 +23,7 @@ import Logo from '@/components/Logo.vue'
       </div>
 
       <div class="">
-        <h3 class="mb-2 font-semibold">Social</h3>
+        <h3 class="mb-2 font-semibold">Socials</h3>
 
         <ul class="flex gap-x-2">
           <li>

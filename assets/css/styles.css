@@ -1,0 +1,9 @@
+/* CUSTOME STYLES FOR TAILWINF TYPOGRAPHY */
+
+.prose h2 a {
+  text-decoration: none;
+}
+
+.prose h2 {
+  @apply mt-0 mb-5 text-2xl font-extrabold;
+}

@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2024-10-30',
-  modules: ['@nuxt/image', '@nuxtjs/tailwindcss', 'shadcn-nuxt', '@nuxtjs/seo', '@nuxt/content', '@nuxtjs/color-mode'],
+  modules: [
+    '@nuxt/image',
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    '@nuxtjs/seo',
+    '@nuxt/content',
+    '@nuxtjs/color-mode',
+  ],
   nitro: {
     preset: 'static',
   },
@@ -24,9 +31,18 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://okikelabs.com',
-    name: 'Okikelabs | A product studio',
+    name: 'Okikelabs | A startup studio',
     description:
-      'Okikelabs is a product studio operating out of Nigeria, committed to building purposeful SaaS solutions with a global reach.',
+      'Okikelabs is a startup studio committed to building products with a global reach.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
+  },
+  content: {
+    documentDriven: true,
+    // markdown: {
+    //   anchorLinks: false,
+    // },
+    // navigation: {
+    // fields: ['slug', 'title'],
+    // },
   },
 })

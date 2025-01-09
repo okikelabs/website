@@ -1,9 +1,10 @@
+<script lang="ts" setup></script>
+
 <template>
   <main class="prose mx-auto">
-    <!-- <ContentDoc /> -->
     <ContentDoc v-slot="{ doc }">
       <article>
-        <h1>{{ doc.title }}</h1>
+        <h1 class="text-5xl text-center">{{ doc.title }}</h1>
         <ContentRenderer :value="doc" class="text-[17px]" />
       </article>
     </ContentDoc>
