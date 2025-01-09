@@ -1,0 +1,57 @@
+---
+title: 'Year in Review: 2024'
+description: 'Reflecting on a transformative 2024.'
+draft: false
+date: '2024-12-27'
+author: ['Emmanuel Raymond']
+slug: 'year-in-review-2024'
+---
+
+2024 has been a transformative year for us at Okikelabs, a year marked by experimentation, and significant milestones. As a small, bootstrapped team with big ambitions, we set out on a journey to create products. Today, we’re proud to reflect on how far we’ve come.
+
+<!-- ## Building Without Boundaries
+
+When we founded Okikelabs, our mission was simple: to create valuable products without being confined by rigid niches or expectations. This year, we try to stayed true to that mission, embracing flexibility, creativity, and resilience as our guiding principles.
+
+Our name, rooted in the Igbo word _òkìkè_ (meaning creation), continues to inspire us to build boldly, experiment fearlessly, and honor our Nigerian roots. This year has shown us that great ideas can come from anywhere—even a small team in Nigeria. -->
+
+## The Launch of Nuxt SaaS Kit
+
+2024 saw the launch of [Nuxt SaaS Kit](https://www.nuxtsaaskit.com/), one of our proudest achievements to date. Designed for developers, entrepreneurs, and agencies, this SaaS starter kit simplifies the process of building production-ready SaaS applications.
+
+With robust features like authentication, payment integration, team management, and SEO optimization, Nuxt SaaS Kit has empowered our customers to focus on what truly matters, bringing their unique ideas to life.
+
+Some of the highlights:
+
+- A modern tech stack featuring Nuxt 3, TypeScript, PostgreSQL, and Tailwind CSS.
+- Essential SaaS components, including a landing page, admin panel, and blog platform.
+- Built-in support for team collaboration, transactional emails, and subscriptions.
+
+This product embodies our commitment to solving real-world problems while saving our users time and resources. The positive feedback and early sales have validated our belief in its potential.
+
+## What We Learned
+
+2024 was not without its challenges. As a fully bootstrapped team, we had to navigate uncertainties and learn quickly. From tackling the complexities of integrating platforms like LemonSqueezy to refining our marketing strategies, every challenge taught us invaluable lessons.
+
+Some key takeaways:
+
+- **Execution Matters**: Dreams and ideas are great, but execution turns them into reality. Bootstrapping has pushed us to prioritize action over perfection.
+- **Feedback is Gold**: Sharing Nuxt SaaS Kit with private groups helped us refine the product and understand our audience better.
+- **Marketing is Crucial**: Replying to Reddit posts and crafting high-performing social media posts were small but effective steps toward growing our reach.
+
+## Our Vision for 2025
+
+As we step into 2025, our vision remains clear: to build, experiment, and grow. Our focus includes:
+
+- Expanding our portfolio based on market needs and opportunities.
+- Continuing to improve and enhance our existing products.
+- Strengthening our marketing strategies and market presence.
+- Maintaining our commitment to bootstrapped, sustainable growth.
+
+## Final Thoughts
+
+2024 has been a foundational year for Okikelabs. We've moved from idea to reality, launching our first product while establishing the operational framework that will support our future growth. While we're proud of what we've accomplished, we recognize that we're just getting started.
+
+To everyone who supported us this year, whether by purchasing Nuxt SaaS Kit, sharing feedback or simply cheering us on, thank you.
+
+Here’s to a productive and exciting 2025!

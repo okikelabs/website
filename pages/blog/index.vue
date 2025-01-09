@@ -1,7 +1,7 @@
 <script setup>
 const contentQuery = await queryContent('blog')
   .where({ draft: false })
-  .sort({ date: 1 })
+  .sort({ date: -1 })
   .find()
 </script>
 
