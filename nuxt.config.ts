@@ -35,14 +35,5 @@ export default defineNuxtConfig({
     description:
       'Okikelabs is a startup studio committed to building products with a global reach.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
-  },
-  content: {
-    documentDriven: true,
-    // markdown: {
-    //   anchorLinks: false,
-    // },
-    // navigation: {
-    // fields: ['slug', 'title'],
-    // },
-  },
+  }
 })
