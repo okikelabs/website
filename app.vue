@@ -13,10 +13,15 @@ body {
   background-color: #f1f5f9;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Satoshi-Variable';
   src: url('~/assets/fonts/satoshi/Fonts/Variable/Satoshi-Variable.ttf')
     format('truetype');
+} */
+
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('./assets/fonts/travels/Travels-Regular.otf') format('opentype');
 }
 
 html {
