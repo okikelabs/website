@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import Logo from '@/components/Logo.vue'
+import SocialLogo from '~/assets/SocialLogo.vue'
+import brands from '~/data/brands'
 </script>
 
 <template>
@@ -26,37 +28,8 @@ import Logo from '@/components/Logo.vue'
         <h3 class="mb-2 font-semibold">Socials</h3>
 
         <ul class="flex gap-x-2">
-          <li>
-            <a href="https://x.com/okikelabshq" target="_blank" class="">
-              <img class="w-8 h-8" src="~/assets/images/x.svg" alt="X logo" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://instagram.com/okikelabshq"
-              target="_blank"
-              class=""
-            >
-              <img
-                class="w-8 h-8"
-                src="~/assets/images/instagram.svg"
-                alt="instagram logo"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com/company/okikelabs"
-              target="_blank"
-              class=""
-            >
-              <img
-                class="w-8 h-8"
-                src="~/assets/images/linkedin.svg"
-                alt="linkedin logo"
-              />
-            </a>
-          </li>
+          <!-- <li > -->
+          <SocialLogo :brands="brands" />
         </ul>
       </div>
     </div>
