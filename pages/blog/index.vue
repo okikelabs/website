@@ -3,6 +3,10 @@ const contentQuery = await queryContent('blog')
   .where({ draft: false })
   .sort({ date: -1 })
   .find()
+
+  useSeoMeta({
+    title: 'Hello'
+  })
 </script>
 
 <template>
