@@ -15,6 +15,15 @@ useSeoMeta({
   description,
   ogType: 'article',
 })
+
+// useHead({
+//   link: [
+//     {
+//       rel: 'canonical',
+//       href: 'https://okikelabs.com/blog',
+//     },
+//   ],
+// })
 </script>
 
 <template>

@@ -9,6 +9,16 @@ useSeoMeta({
   title:
     'Okikelabs Blog | Product, Engineering, Design, Culture and many more.',
 })
+
+// useHead({
+//   link: [
+//     {
+//       rel: 'canonical',
+//       // href: 'http://localhost:3000/blog',
+//       // href: 'https://okikelabs.com/blog'
+//     },
+//   ],
+// })
 </script>
 
 <template>

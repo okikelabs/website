@@ -1,6 +1,17 @@
 <script setup>
 import Footer from '@/components/Footer.vue'
 import Logo from '@/components/Logo.vue'
+
+const router = useRoute()
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://okikelabs.com' + router.path,
+    },
+  ],
+})
 </script>
 
 <template>
