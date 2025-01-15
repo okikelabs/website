@@ -1,16 +1,27 @@
 <script lang="ts" setup>
+const path = useRoute()
+
+const { data } = await useAsyncData(`content-${path}`, () =>
+  queryContent()
+    .where({ slug: path.path.split('/').pop() })
+    .findOne()
+)
+
+const { title, description } = data.value ?? ({} as any)
+
 useSeoMeta({
   titleTemplate: '%s | Okikelabs Blog',
+  title,
+  description,
+  ogType: 'article',
 })
 </script>
 
 <template>
   <main class="prose mx-auto">
-    <ContentDoc v-slot="{ doc }">
-      <article>
-        <h1 class="text-5xl text-center">{{ doc.title }}</h1>
-        <ContentRenderer :value="doc" class="text-[17px]" />
-      </article>
-    </ContentDoc>
+    <article>
+      <h1 class="text-5xl text-center">{{ data?.title }}</h1>
+      <ContentRenderer v-if="data" :value="data" class="text-[17px]" />
+    </article>
   </main>
 </template>

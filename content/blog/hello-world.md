@@ -1,6 +1,6 @@
 ---
 title: 'Hello World'
-description: 'Announcing the launch of Okikelabs, a bootstrapped sartup studio focused on building products through bold experimentation.'
+description: 'Announcing the launch of Okikelabs, a bootstrapped sartup studio.'
 draft: false
 date: '2024-08-19'
 author: ['Emmanuel Raymond', 'Tochukwu Alor']
