@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useSeoMeta({
+  titleTemplate: '%s | Okikelabs Blog',
+})
+</script>
 
 <template>
   <main class="prose mx-auto">

@@ -2,6 +2,22 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2024-10-30',
+  app: {
+    head: {
+      titleTemplate: '%s %separator %siteName',
+      templateParams: {
+        separator: '|',
+        siteName: 'This is the Site Name',
+      },
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: '/favicon.ico',
+        },
+      ],
+    },
+  },
   modules: [
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
@@ -33,7 +49,7 @@ export default defineNuxtConfig({
     url: 'https://okikelabs.com',
     name: 'Okikelabs | A startup studio',
     description:
-      'Okikelabs is a startup studio committed to building products with a global reach.',
+      'Okikelabs is a startup studio that specializes in building products with a global reach.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
-  }
+  },
 })

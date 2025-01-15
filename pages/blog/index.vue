@@ -4,9 +4,11 @@ const contentQuery = await queryContent('blog')
   .sort({ date: -1 })
   .find()
 
-  useSeoMeta({
-    title: 'Hello'
-  })
+useSeoMeta({
+  titleTemplate: '%s',
+  title:
+    'Okikelabs Blog | Product, Engineering, Design, Culture and many more.',
+})
 </script>
 
 <template>
