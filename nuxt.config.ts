@@ -16,6 +16,13 @@ export default defineNuxtConfig({
           href: '/favicon.ico',
         },
       ],
+      script: [
+        {
+          src: 'https://analytics.ahrefs.com/analytics.js',
+          async: true,
+          'data-key': 'wTGN1dZtZc19DXJ7mLEhDw',
+        },
+      ],
     },
   },
   modules: [
