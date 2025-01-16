@@ -17,7 +17,7 @@ Okikelabs was born out of countless late-night conversations, fueled by a shared
 
 ## Why Okikelabs?
 
-The name reflects who we are: builders, experimenters, and dreamers. [_òkìkè_](https://nkowaokwu.com/word?word=okike&id=648376ba442b09f5a27e5caf) means creation in Igbo, a reminder of our Nigerian roots and the power of creating something out of nothing. Paired with “labs,” it embodies the spirit of experimentation and the willingness to try, fail, learn, and improve.
+The name reflects who we are: builders, experimenters, and dreamers. [_òkìkè_](https://nkowaokwu.com/word?word=okike&id=648376ba442b09f5a27e5caf) means creation in Igbo, a reminder of our Nigerian roots and the power to create something out of nothing. Paired with “labs,” it embodies the spirit of experimentation and the willingness to try, fail, learn, and improve.
 
 <!-- But Okikelabs is more than just a name. It’s a vision—a promise to ourselves and the people we aim to serve. -->
 
@@ -29,7 +29,7 @@ We believe that the best ideas often come from the freedom to explore and experi
 
 ## Looking Ahead
 
-Okikelabs is more than a startup studio; it’s our playground, lab, and way of making a mark and to prove that great products can come from anywhere, even a small team in Nigeria.
+Okikelabs is more than a startup studio; it’s our playground and way of making a mark and to prove that great products can come from anywhere, even a small team in Nigeria.
 
 The road ahead is both exciting and terrifying. It means embracing uncertainty, making mistakes, and learning every step of the way. 
 
