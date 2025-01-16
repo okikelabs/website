@@ -20,8 +20,8 @@ useHead({
   >
     <!-- navigation -->
     <header class="w-full">
-      <nav class="flex justify-between items-center">
-        <Logo />
+      <nav class="flex w-full">
+        <Logo class="w-full" :show-full="true" />
       </nav>
     </header>
 
