@@ -1,3 +1,21 @@
+<script lang="ts" setup>
+import { usePreferredDark, useFavicon } from '@vueuse/core'
+
+const setFavicon = () => {
+  const isDark = usePreferredDark()
+  const favicon = computed(() =>
+    isDark.value ? '/favicon.ico' : '/favicon-light.ico'
+  )
+
+  useFavicon(favicon, {
+    rel: 'icon',
+  })
+}
+onMounted(() => {
+  setFavicon()
+})
+</script>
+
 <template>
   <div>
     <NuxtLayout>
@@ -18,11 +36,6 @@ body {
   src: url('~/assets/fonts/satoshi/Fonts/Variable/Satoshi-Variable.ttf')
     format('truetype');
 }
-
-/* @font-face {
-  font-family: 'Satoshi-Variable';
-  src: url('./assets/fonts/travels/Travels-Regular.otf') format('opentype');
-} */
 
 html {
   scroll-behavior: smooth;
