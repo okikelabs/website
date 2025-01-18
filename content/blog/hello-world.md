@@ -3,8 +3,10 @@ title: 'Hello World'
 description: 'Announcing the launch of Okikelabs, a bootstrapped sartup studio.'
 draft: false
 date: '2024-08-19'
+lastmod: ''
 author: ['Emmanuel Raymond', 'Tochukwu Alor']
 slug: 'hello-world'
+coverImg: ''
 ---
 
 Every great story starts with a simple idea. For us at Okikelabs, it began with the belief that we could build something meaningful, something that matters, without waiting for permission or perfect conditions, unhindered by location or circumstance.
@@ -31,13 +33,13 @@ We believe that the best ideas often come from the freedom to explore and experi
 
 Okikelabs is more than a startup studio; it’s our playground and way of making a mark and to prove that great products can come from anywhere, even a small team in Nigeria.
 
-The road ahead is both exciting and terrifying. It means embracing uncertainty, making mistakes, and learning every step of the way. 
+The road ahead is both exciting and terrifying. It means embracing uncertainty, making mistakes, and learning every step of the way.
 
 We’ve started with nothing but a vision, our skills, and a deep determination to make it work. There’s no roadmap, just a belief that with effort, creativity, and resilience, we can turn ideas into great products.
 
 ## Join Us on This Journey
 
- We’re just getting started, and we can’t wait to share more of our journey with you.
+We’re just getting started, and we can’t wait to share more of our journey with you.
 
 Follow us on social media to stay updated. We'd love to have you with us as we grow and share our updates and milestones.
 

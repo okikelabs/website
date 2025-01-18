@@ -3,8 +3,10 @@ title: 'Introducing Nuxt SaaS Kit'
 description: 'Nuxt SaaS Kit is a ready-to-use starter kit for building scalable SaaS applications, offering essential features like authentication, payment integration, team management and more.'
 draft: false
 date: '2024-10-14'
+lastmod: ''
 author: ['Emmanuel Raymond']
 slug: 'nuxt-saas-kit'
+coverImg: ''
 ---
 
 At Okikelabs, we pride ourselves on building diverse products that solve real-world problems. As part of this vision, we are excited to announce the launch of [Nuxt SaaS Kit](https://nuxtsaaskit.com/), a comprehensive SaaS starter kit designed to save you time and effort in building your next SaaS project.
@@ -16,7 +18,7 @@ Nuxt SaaS Kit is a comprehensive Nuxt starter kit to build a robust and market-r
 ## **Modern Tech Stack**
 
 - [**Typescript**](https://www.typescriptlang.org/) - Provides type safety and a smoother development experience.
-- [**Nuxt 3**](https://nuxt.com/) - A framework for creating  powerful server-side rendering capabilities and modern Vue features.
+- [**Nuxt 3**](https://nuxt.com/) - A framework for creating powerful server-side rendering capabilities and modern Vue features.
 - **PostgreSQL**: A reliable and scalable relational database for managing application data.
 - [**Tailwind CSS**](https://tailwindcss.com/) - Enables rapid UI development with utility-first styling
 - [**Shadcn-vue**](https://www.shadcn-vue.com/) - Provides beautiful, customizable components that speed up development
@@ -81,6 +83,6 @@ Nuxt SaaS Kit is designed for:
 
 ## Get Started Today
 
-Ready to bring your SaaS idea to life? Nuxt SaaS Kit is available at a one-time purchase price, providing lifetime access to the codebase and updates.  As part of our launch, we’re offering an exclusive discount for early adopters. Don’t miss this opportunity to start your SaaS journey.
+Ready to bring your SaaS idea to life? Nuxt SaaS Kit is available at a one-time purchase price, providing lifetime access to the codebase and updates. As part of our launch, we’re offering an exclusive discount for early adopters. Don’t miss this opportunity to start your SaaS journey.
 
 We’re excited to see the incredible projects you’ll create with Nuxt SaaS Kit.
