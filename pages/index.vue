@@ -7,18 +7,16 @@ import ProjectCard from '@/components/ProjectCard.vue'
   <div>
     <section class="flex flex-col gap-4 text-foreground/70 text-lg">
       <h1>
-        Okikelabs is a startup studio that specializes in building SaaS products
-        with a global reach. We’re passionate about creating innovative products
-        that solve real-world problems. Our approach goes beyond trends, we’re
-        focused on creating products that bring genuine value and stand the test
-        of time.
+        Okikelabs is a startup studio that specializes in building products with
+        a global reach. We are not an agency or dev shop, instead we’re focused
+        on creating products that bring genuine value and stand the test of time
+        while being continuously improved through learning and iteration
       </h1>
-
       <h2>
         We’re a small, bootstrapped team of builders united by our passion for
-        turning ideas into impactful SaaS products that solve real-world
-        problems. Our approach is to focus on creating meaningful solutions
-        rather than being confined to any specific niche or outcome.
+        turning ideas into products that solve real-world problems. Our approach
+        is to focus on creating meaningful solutions rather than being confined
+        to any specific niche or trend.
       </h2>
     </section>
 
