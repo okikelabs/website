@@ -29,7 +29,7 @@ useSeoMeta({
 <template>
   <main class="prose mx-auto">
     <article>
-      <h1 class="text-5xl text-center">{{ data?.title }}</h1>
+      <h1 class="text-5xl md:text-center">{{ data?.title }}</h1>
       <ContentRenderer v-if="data" :value="data" class="text-[17px]" />
     </article>
   </main>
