@@ -1,24 +1,17 @@
 <script setup>
-const contentQuery = await queryContent('blog')
-  .where({ draft: false })
-  .sort({ date: -1 })
-  .find()
+const { data: posts } = await useAsyncData('blog', () => {
+  return queryCollection('blog')
+    .where('draft', '=', 0)
+    .select('slug', 'title', 'description')
+    .order('date', 'DESC')
+    .all()
+})
 
 useSeoMeta({
   titleTemplate: '%s',
   title:
     'Okikelabs Blog | Product, Engineering, Design, Culture and many more.',
 })
-
-// useHead({
-//   link: [
-//     {
-//       rel: 'canonical',
-//       // href: 'http://localhost:3000/blog',
-//       // href: 'https://okikelabs.com/blog'
-//     },
-//   ],
-// })
 </script>
 
 <template>
@@ -33,12 +26,8 @@ useSeoMeta({
     <hr class="my-8" />
 
     <ul class="list-disc space-y-2">
-      <li
-        v-for="article in contentQuery"
-        :key="article.slug"
-        class="text-lg font-medium"
-      >
-        <NuxtLink :to="`/blog/${article.slug}`">{{ article.title }}</NuxtLink>
+      <li v-for="post in posts" :key="post.slug" class="text-lg font-medium">
+        <NuxtLink :to="`/blog/${post.slug}`">{{ post.title }}</NuxtLink>
       </li>
     </ul>
   </div>
