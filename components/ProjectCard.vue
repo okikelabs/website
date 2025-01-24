@@ -33,6 +33,7 @@ const props = defineProps({
       :href="url"
       target="_blank"
       class="bg-white flex items-start p-4 rounded-lg shadow-sm hover:shadow-lg transition duration-300 relative flex-1"
+      rel="nofollow noopener noreferrer"
     >
       <!-- favicon for the project -->
       <div

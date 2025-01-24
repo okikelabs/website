@@ -21,7 +21,7 @@ defineProps<Props>()
 
 <template>
   <li v-for="brand in brands" :key="brand.name">
-    <a :href="brand.url" target="_blank">
+    <a :href="brand.url" target="_blank" rel="nofollow noopener noreferrer">
       <img
         class="flex"
         :alt="brand.alt"

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import Logo from '@/components/Logo.vue'
-import SocialLogo from '~/assets/SocialLogo.vue'
+import SocialLogo from '@/components/SocialLogo.vue'
 import brands from '~/data/brands'
 </script>
 
