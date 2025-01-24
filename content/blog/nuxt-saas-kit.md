@@ -6,6 +6,7 @@ date: '2024-10-14'
 lastmod: ''
 author: ['Emmanuel Raymond']
 slug: 'nuxt-saas-kit'
+category: 'Product'
 image: { src: '', alt: '' }
 ---
 

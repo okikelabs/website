@@ -59,4 +59,16 @@ export default defineNuxtConfig({
       'Okikelabs is a startup studio that specializes in building products with a global reach.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
+  content: {
+    build: {
+      markdown: {
+        rehypePlugins: {
+          'rehype-external-links': {
+            target: '_blank',
+            rel: ['nofollow', 'noopener', 'noreferrer'],
+          },
+        },
+      },
+    },
+  },
 })

@@ -16,6 +16,7 @@ export const collections = {
       date: z.date(),
       author: z.array(z.string()),
       slug: z.string(),
+      category: z.string(),
       image: z.object({
         src: z.string(),
         alt: z.string(),
