@@ -39,6 +39,4 @@ const isExternalLink = computed(() => {
     (props.href.startsWith('https://') && !props.href.includes(baseUrl))
   )
 })
-
-// console.log(isExternalLink)
 </script>
