@@ -10,7 +10,7 @@ category: 'Product'
 image: { src: '', alt: '' }
 ---
 
-At Okikelabs, we pride ourselves on building diverse products that solve real-world problems. As part of this vision, we are excited to announce the launch of [Nuxt SaaS Kit](https://nuxtsaaskit.com/) [Nuxt SaaS Kit](/blog/hello-world), a comprehensive SaaS starter kit designed to save you time and effort in building your next SaaS project.
+At Okikelabs, we pride ourselves on building diverse products that solve real-world problems. As part of this vision, we are excited to announce the launch of [Nuxt SaaS Kit](https://nuxtsaaskit.com/), a comprehensive SaaS starter kit designed to save you time and effort in building your next SaaS project.
 
 ## What is Nuxt SaaS Kit?
 
