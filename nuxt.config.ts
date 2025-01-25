@@ -33,18 +33,20 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/color-mode',
   ],
-  // content: {
-  //   build: {
-  //     markdown: {
-  //       rehypePlugins: {
-  //         'rehype-external-links': {
-  //           target: '_blank',
-  //           rel: ['nofollow', 'noopener', 'noreferrer'],
-  //         },
-  //       },
-  //     },
-  //   },
-  // },
+  content: {
+    build: {
+      markdown: {
+        rehypePlugins: {
+          'rehype-external-links': {
+            options: {
+              target: '_blank',
+              rel: ['nofollow', 'noopener', 'noreferrer'],
+            },
+          },
+        },
+      },
+    },
+  },
   nitro: {
     preset: 'static',
   },
