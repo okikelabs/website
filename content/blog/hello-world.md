@@ -4,7 +4,7 @@ description: 'Announcing the launch of Okikelabs, a bootstrapped sartup studio.'
 draft: false
 date: '2024-08-19'
 lastmod: ''
-author: ['Emmanuel Raymond']
+author: ['Emmanuel Raymond', 'Tochukwu Alor']
 slug: 'hello-world'
 category: 'Announcements'
 image: { src: '', alt: '' }
