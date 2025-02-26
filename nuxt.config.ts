@@ -68,7 +68,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://okikelabs.com',
-    name: 'Okikelabs | A startup studio',
+    name: 'Okikelabs | Proud makers of great software',
     description:
       'Okikelabs is a startup studio that specializes in building products with a global reach.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed

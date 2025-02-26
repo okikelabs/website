@@ -10,7 +10,7 @@ import brands from '~/data/brands'
     <div class="grid gap-8 md:gap-4 md:grid-cols-3 py-12">
       <div class="">
         <Logo />
-        <p class="pt-4">Building without boundaries</p>
+        <p class="pt-4">Proud makers of great software</p>
       </div>
 
       <div class="">
