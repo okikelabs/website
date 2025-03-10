@@ -52,9 +52,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  // nitro: {
-  //   preset: 'static',
-  // },
   shadcn: {
     /**
      * Prefix for all the imported component
