@@ -33,6 +33,11 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/color-mode',
   ],
+  tailwindcss: {
+    config: {
+      content: ['./pages/**/*.{vue,js,ts}', './components/**/*.{vue,js,ts}'],
+    },
+  },
   content: {
     build: {
       markdown: {
