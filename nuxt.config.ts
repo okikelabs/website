@@ -47,13 +47,8 @@ export default defineNuxtConfig({
       },
     },
   },
-  nitro: {
-    preset: 'static',
-  },
-  // hooks: {
-  //   close: () => {
-  //     process.exit(0)
-  //   },
+  // nitro: {
+  //   preset: 'static',
   // },
   shadcn: {
     /**
