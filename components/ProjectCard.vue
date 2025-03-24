@@ -14,7 +14,7 @@ const props = defineProps({
   },
   year: {
     type: String,
-    required: true,
+    required: false,
   },
   description: {
     type: String,
@@ -47,9 +47,10 @@ const props = defineProps({
           <div class="flex items-center justify-start space-x-2 flex-1">
             <h3 class="text-lg font-medium text-gray-900">{{ title }}</h3>
             <span
+            v-if="year"
               class="px-2 py-1 text-xs font-medium text-gray-800 bg-gray-100 rounded-full"
             >
-              {{ year }}
+              {{ year}}
             </span>
           </div>
 

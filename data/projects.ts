@@ -23,7 +23,7 @@ export default [
     url: '#',
     icon: 'wip.png',
     // icon: 'coming-soon.png',
-    // year: '2024',
+    // year: '',
     status: 'coming-soon',
   },
   // {
