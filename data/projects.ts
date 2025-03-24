@@ -5,8 +5,16 @@ export default [
       'The complete Nuxt starter kit to build a robust and market-ready SaaS project.',
     // 'The complete Nuxt starter kit to build a robust and market-ready SaaS',
     url: 'https://www.nuxtsaaskit.com',
-    icon: 'icon.png',
+    icon: 'nsk.png',
     year: '2024',
+    status: 'active',
+  },
+   {
+    title: 'Linkvoy',
+    description: 'Everything you need to grow your personal brand on LinkedIn.',
+    url: 'https://linkvoy.com',
+    icon: 'linkvoy.png',
+    year: '2025',
     status: 'active',
   },
   {
@@ -15,7 +23,7 @@ export default [
     url: '#',
     icon: 'wip.png',
     // icon: 'coming-soon.png',
-    year: '2024',
+    // year: '2024',
     status: 'coming-soon',
   },
   // {
