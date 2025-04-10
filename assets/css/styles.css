@@ -3,11 +3,14 @@
 /* .prose h2 a {
   text-decoration: none;
 } */
+@import "tailwindcss";
+@config "@/tailwind.config.js";
 
 .prose :is(h1, h2, h3, h4, h5, h6) a {
   text-decoration: none;
+  @apply font-bold;
 }
 
 .prose :is(h1, h2, h3, h4, h5, h6) {
-  @apply mt-0 mb-5 text-2xl font-extrabold;
+  @apply mt-0 mb-5 text-2xl;
 }
