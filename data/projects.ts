@@ -9,9 +9,9 @@ export default [
     year: '2024',
     status: 'active',
   },
-   {
+  {
     title: 'Linkvoy',
-    description: 'Everything you need to grow your personal brand on LinkedIn.',
+    description: 'Everything you need to plan weddings without the chaos for professionals.',
     url: 'https://linkvoy.com',
     icon: 'linkvoy.png',
     year: '2025',
