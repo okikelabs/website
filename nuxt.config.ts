@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  compatibilityDate: '2024-10-30',
+  compatibilityDate: '2024-11-01',
   app: {
     head: {
       titleTemplate: '%s %separator %siteName',
@@ -32,16 +34,16 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/image',
-    '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
     '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxtjs/color-mode',
   ],
-  tailwindcss: {
-    config: {
-      content: ['./pages/**/*.{vue,js,ts}', './components/**/*.{vue,js,ts}'],
-    },
+  css: ['~/assets/css/tailwind.css'],
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
   content: {
     build: {
