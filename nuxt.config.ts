@@ -25,7 +25,7 @@ export default defineNuxtConfig({
         {
           src: 'https://analytics.okikelabs.com/script.js',
           defer: true,
-          'data-website-id': '576371b2-76d9-4171-b837-a6e08b25025a',
+          'data-website-id': 'f4801ef0-8521-41dc-a016-785c64e608ff',
         }
       ],
     },
