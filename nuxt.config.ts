@@ -22,6 +22,11 @@ export default defineNuxtConfig({
           async: true,
           'data-key': 'wTGN1dZtZc19DXJ7mLEhDw',
         },
+        {
+          src: 'https://analytics.okikelabs.com/script.js',
+          defer: true,
+          'data-website-id': '576371b2-76d9-4171-b837-a6e08b25025a',
+        }
       ],
     },
   },
