@@ -1,10 +1,10 @@
-/* CUSTOME STYLES FOR TAILWINF TYPOGRAPHY */
+/* CUSTOME STYLES FOR TAILWIND TYPOGRAPHY */
 
 /* .prose h2 a {
   text-decoration: none;
 } */
 @import "tailwindcss";
-@config "@/tailwind.config.js";
+@config "@@/tailwind.config.js";
 
 .prose :is(h1, h2, h3, h4, h5, h6) a {
   text-decoration: none;
