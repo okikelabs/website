@@ -15,7 +15,7 @@ COPY package.json pnpm-lock.yaml .npmrc /app/
 RUN npm i -g --force corepack && corepack enable
 
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
-  pnpm install --frozen-lockfile --shamefully-hoist
+  pnpm install --frozen-lockfile --shamefully-hoist --ignore-scripts=false
 
 ARG NUXT_PUBLIC_URL=https://okikelabs.com
 ARG NUXT_PUBLIC_NAME=Okikelabs
