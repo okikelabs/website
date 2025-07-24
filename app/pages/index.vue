@@ -1,6 +1,14 @@
 <script setup>
 import projects from '~/data/projects'
-import ProjectCard from '@/components/ProjectCard.vue'
+
+const { data: posts } = await useAsyncData('blog', () => {
+  return queryCollection('blog')
+    .where('draft', '=', 0)
+    .select('slug', 'title', 'description', 'date', 'image', 'category')
+    .order('date', 'DESC')
+    .limit(2)
+    .all()
+})
 </script>
 
 <template>
@@ -22,7 +30,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
     <hr class="my-8 border-gray-200/70" />
 
     <section class="">
-      <h2 class="text-4xl font-semibold text-blue-primary">Portfolio</h2>
+      <h2 class="text-3xl font-semibold text-blue-primary">Portfolio</h2>
 
       <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full mt-8">
         <ProjectCard
@@ -36,6 +44,19 @@ import ProjectCard from '@/components/ProjectCard.vue'
           :status="project.status"
         ></ProjectCard>
       </ul>
+    </section>
+
+    <section class="mb-20 mt-16">
+      <div class="flex items-center justify-between">
+        <h2 class="text-3xl font-semibold text-blue-primary">Articles</h2>
+        <Button as-child variant="outline">
+          <NuxtLink to="/blog">See More</NuxtLink>
+        </Button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+        <PostCard v-for="post in posts" :key="post.slug" :post="post" />
+      </div>
     </section>
   </div>
 </template>
