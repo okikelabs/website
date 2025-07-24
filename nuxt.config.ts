@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: '2025-05-15',
   app: {
     head: {
       titleTemplate: '%s %separator %siteName',

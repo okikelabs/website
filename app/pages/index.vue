@@ -2,7 +2,7 @@
 import projects from '~/data/projects'
 
 const { data: posts } = await useAsyncData(
-  'blog-homepage',
+  'home',
   () => {
     return queryCollection('blog')
       .where('draft', '=', 0)
