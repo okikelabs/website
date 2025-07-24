@@ -1,7 +1,7 @@
 <script setup>
 import projects from '~/data/projects'
 
-const { data: posts } = await useAsyncData('blog', () => {
+const { data: posts } = await useAsyncData('blog-homepage', () => {
   return queryCollection('blog')
     .where('draft', '=', 0)
     .select('slug', 'title', 'description', 'date', 'image', 'category')
