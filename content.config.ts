@@ -1,26 +1,26 @@
-import { defineCollection, z } from '@nuxt/content'
+import { defineContentConfig, defineCollection, z } from '@nuxt/content'
+import { asSeoCollection } from '@nuxtjs/seo/content'
 
-// Export collections
-export const collections = {
-  // Define collection using `defineCollection` utility
-  blog: defineCollection({
-    // Specify the type of content in this collection
-    type: 'page',
-    // Load every file matching this pattern
-    source: 'blog/**/*.md',
-    // Define custom schema for this collection
-    schema: z.object({
-      title: z.string(),
-      description: z.string(),
-      draft: z.boolean().default(false),
-      date: z.date(),
-      author: z.array(z.string()),
-      slug: z.string(),
-      category: z.string(),
-      image: z.object({
-        src: z.string(),
-        alt: z.string(),
-      }),
-    }),
-  }),
-}
+export default defineContentConfig({
+  collections: {
+    blog: defineCollection(
+      asSeoCollection({
+        type: 'page',
+        source: 'blog/**/*.md',
+        schema: z.object({
+          title: z.string(),
+          description: z.string(),
+          draft: z.boolean().default(false),
+          date: z.date(),
+          author: z.array(z.string()),
+          slug: z.string(),
+          category: z.string(),
+          image: z.object({
+            src: z.string(),
+            alt: z.string(),
+          }),
+        }),
+      })
+    )
+  }
+})

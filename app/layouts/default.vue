@@ -15,9 +15,8 @@ useHead({
 </script>
 
 <template>
-  <div
-    class="max-w-4xl mx-auto lg:pt-20 pt-8 px-4 min-h-screen w-full flex flex-col"
-  >
+  <div class="max-w-4xl mx-auto lg:pt-20 pt-8 px-4 min-h-screen w-full flex flex-col">
+    <!-- <div class="max-w-7xl mx-auto lg:pt-20 pt-8 px-4 min-h-screen w-full flex flex-col"> -->
     <!-- navigation -->
     <header class="w-full">
       <nav class="flex w-full">
