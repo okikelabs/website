@@ -1,6 +1,6 @@
 ---
 title: 'Introducing Nuxt SaaS Kit'
-description: 'Nuxt SaaS Kit is a ready-to-use starter kit for building scalable SaaS applications, offering essential features like authentication, payment integration, team management and more.'
+description: 'The scalable and production-ready Nuxt SaaS starter kit'
 draft: false
 date: '2024-10-14'
 lastmod: ''

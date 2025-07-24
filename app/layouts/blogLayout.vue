@@ -28,7 +28,7 @@ useHead({
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-primary">Okikelabs Blog</h1>
         <!-- <p class="text-foreground/70 text-lg mt-4"> -->
         <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed mt-4">
-          We share our journey of building digital products. We share everything from product
+          Follow us on our journey of building digital products. We share everything from product
           updates to insights on building and growing a bootstrapped business.
         </p>
       </div>
