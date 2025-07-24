@@ -1,4 +1,4 @@
-# Dockerfile with PNPM for Nuxt - v1.2.2
+# Dockerfile with npm for Nuxt - v1.2.2
 # https://gist.github.com/sandros94/03675514546f17af1fd6db3863c043b4
 
 # Base configuration
@@ -8,21 +8,23 @@ WORKDIR /app
 
 # Builder
 FROM base AS builder
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
+# ENV PNPM_HOME="/pnpm"
+# ENV PATH="$PNPM_HOME:$PATH"
 
-COPY package.json pnpm-lock.yaml .npmrc /app/
-RUN npm i -g --force corepack && corepack enable
+COPY package.json package-lock.json* /app/
+RUN npm ci --include=dev
+# RUN npm i -g --force corepack && corepack enable
 
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
-  pnpm install --frozen-lockfile --shamefully-hoist --ignore-scripts=false
+# RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
+# pnpm install --frozen-lockfile --shamefully-hoist --ignore-scripts=false
 
 ARG NUXT_PUBLIC_URL=https://okikelabs.com
 ARG NUXT_PUBLIC_NAME=Okikelabs
 
 COPY . .
 RUN --mount=type=cache,id=nuxt,target=/app/node_modules/.cache/nuxt/.nuxt \
-  pnpm run build
+  npm run build
+# pnpm run build
 
 # Final production container
 FROM base AS runtime
