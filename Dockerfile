@@ -17,7 +17,8 @@ RUN npm i -g --force corepack && corepack enable
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
   pnpm install --frozen-lockfile --shamefully-hoist
 
-ARG NUXT_PUBLIC_URL
+ARG NUXT_PUBLIC_URL=https://okikelabs.com
+ARG NUXT_PUBLIC_NAME=Okikelabs
 
 COPY . .
 RUN --mount=type=cache,id=nuxt,target=/app/node_modules/.cache/nuxt/.nuxt \
