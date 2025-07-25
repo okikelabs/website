@@ -1,18 +1,14 @@
 <script setup>
 import projects from '~/data/projects'
 
-const { data: posts } = await useAsyncData(
-  'home',
-  () => {
-    return queryCollection('blog')
-      .where('draft', '=', 0)
-      .select('slug', 'title', 'description', 'date', 'image', 'category')
-      .order('date', 'DESC')
-      .limit(2)
-      .all()
-  },
-  { server: true }
-)
+const { data: posts } = await useAsyncData('home', () => {
+  return queryCollection('blog')
+    .where('draft', '=', 0)
+    .select('slug', 'title', 'description', 'date', 'image', 'category')
+    .order('date', 'DESC')
+    .limit(2)
+    .all()
+})
 </script>
 
 <template>

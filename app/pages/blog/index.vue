@@ -3,17 +3,13 @@ definePageMeta({
   layout: 'blog-layout',
 })
 
-const { data: posts } = await useAsyncData(
-  'blog',
-  () => {
-    return queryCollection('blog')
-      .where('draft', '=', 0)
-      .select('slug', 'title', 'description', 'date', 'image', 'category')
-      .order('date', 'DESC')
-      .all()
-  },
-  { server: true }
-)
+const { data: posts } = await useAsyncData('blog', () => {
+  return queryCollection('blog')
+    .where('draft', '=', 0)
+    .select('slug', 'title', 'description', 'date', 'image', 'category')
+    .order('date', 'DESC')
+    .all()
+})
 
 useSeoMeta({
   titleTemplate: '%s',
