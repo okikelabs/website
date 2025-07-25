@@ -8,14 +8,14 @@ export default [
     year: '2024',
     status: 'active',
   },
-  {
-    title: 'Linkvoy',
-    description: 'Everything you need to plan weddings without the chaos for professionals.',
-    url: 'https://linkvoy.com?ref=okikelabs',
-    icon: 'linkvoy.png',
-    year: '2025',
-    status: 'active',
-  },
+  // {
+  //   title: 'Linkvoy',
+  //   description: 'Everything you need to plan weddings without the chaos for professionals.',
+  //   url: 'https://linkvoy.com?ref=okikelabs',
+  //   icon: 'linkvoy.png',
+  //   year: '2025',
+  //   status: 'active',
+  // },
   {
     title: 'Stay Tuned😉',
     description: 'More products coming soon...',
