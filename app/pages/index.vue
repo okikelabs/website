@@ -1,14 +1,14 @@
 <script setup>
 import projects from '~/data/projects'
 
-const { data: posts } = await useAsyncData('home', () => {
-  return queryCollection('blog')
-    .where('draft', '=', 0)
-    .select('slug', 'title', 'description', 'date', 'image', 'category')
-    .order('date', 'DESC')
-    .limit(2)
-    .all()
-})
+// const { data: posts } = await useAsyncData('home', () => {
+//   return queryCollection('blog')
+//     .where('draft', '=', 0)
+//     .select('slug', 'title', 'description', 'date', 'image', 'category')
+//     .order('date', 'DESC')
+//     .limit(2)
+//     .all()
+// })
 </script>
 
 <template>
@@ -46,7 +46,7 @@ const { data: posts } = await useAsyncData('home', () => {
       </ul>
     </section>
 
-    <section class="mb-20 mt-16">
+    <!-- <section class="mb-20 mt-16">
       <div class="flex items-center justify-between">
         <h2 class="text-3xl font-semibold text-blue-primary">Articles</h2>
         <Button as-child variant="outline">
@@ -57,6 +57,6 @@ const { data: posts } = await useAsyncData('home', () => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         <PostCard v-for="post in posts" :key="post.slug" :post="post" />
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
