@@ -1,19 +1,19 @@
 <script setup>
 import projects from '~/data/projects'
 
-// const { data: posts } = await useAsyncData('home', () => {
-//   return queryCollection('blog')
-//     .where('draft', '=', 0)
-//     .select('slug', 'title', 'description', 'date', 'image', 'category')
-//     .order('date', 'DESC')
-//     .limit(2)
-//     .all()
-// })
+const { data: posts } = await useAsyncData('home', () => {
+  return queryCollection('blog')
+    .where('draft', '=', 0)
+    .select('slug', 'title', 'description', 'date', 'image', 'category')
+    .order('date', 'DESC')
+    .limit(2)
+    .all()
+})
 </script>
 
 <template>
   <div>
-    <section class="flex flex-col gap-4 text-foreground/70 text-lg">
+    <section class="flex flex-col gap-4 text-lg text-foreground/70">
       <h1>
         Okikelabs is a startup studio that specializes in building products with a global reach. We
         are not an agency or dev shop, instead we’re focused on creating our own products that bring
@@ -32,7 +32,7 @@ import projects from '~/data/projects'
     <section class="">
       <h2 class="text-3xl font-semibold text-blue-primary">Portfolio</h2>
 
-      <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full mt-8">
+      <ul class="grid grid-cols-1 gap-4 mt-8 w-full lg:grid-cols-2">
         <ProjectCard
           v-for="project in projects"
           :key="project.title"
@@ -46,17 +46,17 @@ import projects from '~/data/projects'
       </ul>
     </section>
 
-    <!-- <section class="mb-20 mt-16">
-      <div class="flex items-center justify-between">
+    <section class="mt-16 mb-20">
+      <div class="flex justify-between items-center">
         <h2 class="text-3xl font-semibold text-blue-primary">Articles</h2>
         <Button as-child variant="outline">
           <NuxtLink to="/blog">See More</NuxtLink>
         </Button>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+      <div class="grid grid-cols-1 gap-8 mt-10 md:grid-cols-2">
         <PostCard v-for="post in posts" :key="post.slug" :post="post" />
       </div>
-    </section> -->
+    </section>
   </div>
 </template>
