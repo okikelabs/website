@@ -61,7 +61,7 @@ export default defineNuxtConfig({
   },
   $production: {
     routeRules: {
-      '/': { swr: 900 },
+      '/': { prerender: true, swr: 900 },
       '/blog': { swr: 900 },
       '/blog/**': { prerender: true, swr: 900 },
       '/api/**': { isr: false },
