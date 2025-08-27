@@ -25,8 +25,9 @@ const formatDate = (dateStr: string): string => {
     <div
       class="bg-gray-200 rounded-2xl h-64 mb-6 flex items-center justify-center overflow-hidden relative"
     >
+      <!-- :src="post.image?.src || '/placeholder.png'" -->
       <NuxtImg
-        :src="post.image?.src || '/images/placeholder.jpg'"
+        :src="post.image?.src"
         :alt="post.image?.alt || post.title"
         width="350"
         height="200"

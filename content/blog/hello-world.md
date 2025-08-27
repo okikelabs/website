@@ -7,7 +7,7 @@ lastmod: ''
 author: ['Emmanuel Raymond', 'Tochukwu Alor']
 slug: 'hello-world'
 category: 'Announcement'
-image: { src: '', alt: '' }
+image: { src: 'placeholder.png', alt: 'Placeholder image' }
 ---
 
 Every great story starts with a simple idea. For us at Okikelabs, it began with the belief that we could build something meaningful, something that matters, without waiting for permission or perfect conditions, unhindered by location or circumstance.
