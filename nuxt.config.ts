@@ -59,6 +59,19 @@ export default defineNuxtConfig({
       },
     },
   },
+  $production: {
+    routeRules: {
+      '/': { swr: 900 },
+      '/blog': { swr: 900 },
+      '/blog/**': { prerender: true, swr: 900 },
+      '/api/**': { isr: false },
+    },
+  },
+  $development: {
+    routeRules: {
+      '/api/**': { isr: false },
+    },
+  },
   shadcn: {
     /**
      * Prefix for all the imported component
