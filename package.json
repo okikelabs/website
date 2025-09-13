@@ -22,7 +22,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.541.0",
-    "nuxt": "^4.0.3",
+    "nuxt": "^4.1.2",
     "rehype-external-links": "^3.0.0",
     "reka-ui": "^2.4.1",
     "shadcn-nuxt": "^2.2.0",
