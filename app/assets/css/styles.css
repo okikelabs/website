@@ -4,7 +4,8 @@
   text-decoration: none;
 } */
 @import "tailwindcss";
-@config "@@/tailwind.config.js";
+@reference './tailwind.css'
+/* @config "@@/tailwind.config.js"; */
 
 .prose :is(h1, h2, h3, h4, h5, h6) a {
   text-decoration: none;
@@ -13,4 +14,10 @@
 
 .prose :is(h1, h2, h3, h4, h5, h6) {
   @apply mt-0 mb-5 text-2xl;
+}
+
+@theme {
+  --color-blue-primary: #1C274C;
+  --color-blue-secondary: #1D4E76;
+  --color-blue-tertiary: #161A42;
 }
