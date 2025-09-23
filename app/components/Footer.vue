@@ -21,6 +21,7 @@ import brands from '~/data/brands'
           <li><nuxt-link to="/blog">Blog</nuxt-link></li>
 
           <li><a href="mailto:hello@okikelabs.com">Contact us</a></li>
+          <li><a href="https://status.okikelabs.com/" target="_blank">System Status</a></li>
         </ul>
       </div>
 
@@ -41,8 +42,8 @@ import brands from '~/data/brands'
       <!-- <small class="block">Built by Emmanuel Raymond and Tochukwu Alor</small> -->
 
       <small class="block pt-6 lg:pt-0"
-        >Copyright &copy; {{ new Date().getFullYear() }}. Okikelabs Technologies
-        Ltd - All rights reserved</small
+        >Copyright &copy; {{ new Date().getFullYear() }}. Okikelabs Technologies Ltd - All rights
+        reserved</small
       >
     </div>
   </footer>
