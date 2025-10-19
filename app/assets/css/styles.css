@@ -1,11 +1,5 @@
 /* CUSTOME STYLES FOR TAILWIND TYPOGRAPHY */
-
-/* .prose h2 a {
-  text-decoration: none;
-} */
-@import "tailwindcss";
-@reference './tailwind.css'
-/* @config "@@/tailwind.config.js"; */
+@import 'tailwindcss';
 
 .prose :is(h1, h2, h3, h4, h5, h6) a {
   text-decoration: none;
@@ -16,8 +10,16 @@
   @apply mt-0 mb-5 text-2xl;
 }
 
+.prose hr {
+  /* border-color: var(--color-blue-secondary); */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* height: 0px; */
+  /* background-image: linear-gradient(to right, transparent, #ccc, transparent); */
+}
+
 @theme {
-  --color-blue-primary: #1C274C;
-  --color-blue-secondary: #1D4E76;
-  --color-blue-tertiary: #161A42;
+  --color-blue-primary: #1c274c;
+  --color-blue-secondary: #1d4e76;
+  --color-blue-tertiary: #161a42;
 }
