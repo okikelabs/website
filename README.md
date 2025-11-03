@@ -1,3 +1,3 @@
-# okikelabs
+# Okike Labs
 
-Okikelabs website.
+Okike Labs website.

@@ -13,14 +13,14 @@ const { data: posts } = await useAsyncData('blog', () => {
 
 useSeoMeta({
   titleTemplate: '%s',
-  title: 'Okikelabs Blog | Product, Engineering, Design, Culture and many more.',
+  title: 'Okike Labs Blog | Product, Engineering, Design, Culture and many more.',
 })
 </script>
 
 <template>
   <div>
     <div class="text-center">
-      <h1 class="text-4xl font-bold md:text-5xl lg:text-6xl text-blue-primary">Okikelabs Blog</h1>
+      <h1 class="text-4xl font-bold md:text-5xl lg:text-6xl text-blue-primary">Okike Labs Blog</h1>
       <p class="mt-4 text-lg leading-relaxed text-gray-600">
         Follow us on our journey of building digital products. We share everything from product
         updates to insights on building and growing a bootstrapped business.

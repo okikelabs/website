@@ -23,3 +23,7 @@
   --color-blue-secondary: #1d4e76;
   --color-blue-tertiary: #161a42;
 }
+
+.prose a:not(h1 a, h2 a, h3 a, h4 a, h5 a, h6 a) {
+  @apply text-[#263145]
+}

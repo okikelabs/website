@@ -1,16 +1,16 @@
 ---
-title: 'One Year of Okikelabs'
-description: 'Reflecting on a transformative 2024.'
+title: 'One Year of Building Okike Labs'
+description: 'A raw reflection on our first year building Okike Labs — what worked, what didn’t, and what we learned.'
 draft: false
-date: 2025-10-20
+date: 2025-11-03
 lastmod: ''
 author: ['Emmanuel Raymond']
-slug: '0ne-year-of-okikelabs'
+slug: 'one-year-of-building-okikelabs'
 category: 'Company'
 image: { src: 'placeholder.png', alt: 'Placeholder image' }
 ---
 
-Okikelabs turned one in August. It doesn’t feel like a big milestone — It just feels like time passed. One year of trying to figure out what we’re building, what we’re doing and who we are.
+Okike Labs turned one in August. It doesn’t feel like a big milestone — It just feels like time passed. One year of trying to figure out what we’re building, what we’re doing and who we are.
 
 When I had the grand plan of starting a product lab, I imagined all the possible ways it could have turned out, but not in the way it actually did.
 
@@ -26,7 +26,7 @@ It was a recipe for stalling out. And we did. Repeatedly.
 
 ## The Graveyard of Ideas
 
-For almost a year now, Okikelabs has positioned itself as a "multi-product company" with only one product to show for it. It's embarrassing to say out loud. We're supposed to be the company that ships. Instead, we've left a trail of abandoned projects like breadcrumbs leading nowhere.
+For almost a year now, Okike Labs has positioned itself as a "multi-product company" with only one product to show for it. It's embarrassing to say out loud. We're supposed to be the company that ships. Instead, we've left a trail of abandoned projects like breadcrumbs leading nowhere.
 
 As it turns out, we're still developers after all, plagued by the same curse that haunts our kind: we don't finish things.
 
@@ -51,13 +51,7 @@ But around that time, boilerplates were trending. Everyone was building them for
 
 It took us so long to release it that we'd already lost the momentum and virality. But we shipped it anyway. And we've made sales. That's something to be proud of, right?
 
-That was the first time Okikelabs was making money. It wasn’t much but it made the whole thing real.
-
-<hr />
-
-Okikelabs is where it is today, not for a lack of effort but for not enough of it. There were too long many stretches of where nothing was done and we got busy with day job, freelancing gigs and life. That did not help our momentum in any way, if anything we never took what we had seriously.
-
-For most of the first year, things have moved slowly. Some weeks, we’d be in full focus, building or fixing something. Other weeks, nothing happened. We had weekly check-ins to keep ourselves accountable but sometimes even those felt forced.
+That was the first time Okike Labs was making money. It wasn’t much but it made the whole thing real.
 
 I learned quickly that building products isn’t hard, but showing up consistently is.
 
@@ -71,6 +65,20 @@ I learned quickly that building products isn’t hard, but showing up consistent
 
 **Design paralysis:** We spent time on things that didn't move the needle.
 
+## A Change in Structure
+
+Okike Labs is where it is today, not for a lack of effort but for not enough of it. There were too long many stretches of where nothing was done and we got busy with day job, freelancing gigs and life. That did not help our momentum in any way, if anything we never took what we had seriously.
+
+For most of the first year, things have moved slowly. Some weeks, we'd be in full focus, locked in, building or fixing something. Other weeks, nothing happened. We had weekly check-ins to keep ourselves accountable but sometimes even those felt forced.
+
+Midway through the year, things shifted. What began as a partnership transitioned into a solo operation. It was a mutual, natural shift that came from differing priorities and focus over time.
+
+As the company started to redefine its focus and direction, it became clear that alignment was just as important as execution.
+
+In the early days, we both shared the same vision for what Okike Labs could become. But as months went by, our levels of commitment started to differ. What was once a shared rhythm slowly became uneven. The company needed more consistent attention and direction than our setup could provide.
+
+Now I'm running Okikelabs solo. It wasn't the plan, but it's what was needed.
+
 ## What I've Learned
 
 A few weeks ago, I had a call with someone who put everything into perspective. We talked about objectives, goals, how to actually think about a business. And here's the surprising part: we've actually been on the right track. Unintentionally, yes, but aligned nonetheless.
@@ -79,7 +87,7 @@ From the beginning, I wanted to build niche products for specific user bases and
 
 Our issue was never vision. Our issue was execution.
 
-If I had to sum up what we learned in this first year, it’s that doing things matters more than planning them. We spent months trying to define what Okikelabs should be — what kind of products we’d build, what niches to explore. But the only real progress came from shipping something, even if small.
+If I had to sum up what we learned in this first year, it’s that doing things matters more than planning them. We spent months trying to define what Okike Labs should be — what kind of products we’d build, what niches to explore. But the only real progress came from shipping something, even if small.
 
 I learned that:
 
@@ -91,29 +99,15 @@ I learned that:
 - Don't wait for things to be perfect.
 - Finishing is more valuable than starting.
 
-We've learned our lessons about hiring too early, about forcing things that don't fit, about the seduction of shiny new ideas when the current one gets hard.
-
-We've learned that distribution isn't a strategy—it's a megaphone, and it's useless if you have nothing worth amplifying.
-
-We also learned that marketing isn’t a one-time thing. It’s a daily grind, and it often feels repetitive. You say the same thing in ten different ways until someone finally listens.
-
-And maybe the biggest lesson: don’t wait for things to be perfect.
-
-We've learned that burnout is real, that guilt is expensive, and that finishing is more valuable than starting.
-
-<!-- [improve this section] -->
-
 ## The Small Wins
 
 We paid ourselves from the business for the first time this year. Not much, but it's still a moment worth celebrating. It means something to go from zero to something, even if that something is small
 
 ## Looking Ahead
 
-Right now, Okikelabs feels like it’s still finding its rhythm.
+Right now, Okike Labs feels like it’s still finding its rhythm.
 We’re not where we want to be. But at least now, there’s direction.
 Nuxt SaaS Kit is still making sales albeit slowly. I’m also experimenting with new ideas again.
-
-As of now, I’m running Okikelabs solo.
 
 The point isn’t to chase “the next big thing.” It’s to keep moving, keep building, and figure things out by doing.
 

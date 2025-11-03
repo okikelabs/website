@@ -15,15 +15,15 @@ const { data: posts } = await useAsyncData('home', () => {
   <div>
     <section class="flex flex-col gap-4 text-lg text-foreground/70">
       <h1>
-        Okikelabs is a startup studio that specializes in building products with a global reach. We
+        Okike Labs is a product lab that specializes in building products with a global reach. We
         are not an agency or dev shop, instead we’re focused on creating our own products that bring
         genuine value and stand the test of time while being continuously improved through learning
         and iteration.
       </h1>
       <h2>
-        We’re a small, bootstrapped team of builders united by our passion for turning ideas into
-        products that solve real-world problems. Our approach is to focus on creating meaningful
-        solutions rather than being confined to any specific niche or trend.
+        We’re a small, bootstrapped company united by the passion for turning ideas into products
+        that solve real-world problems. Our approach is to focus on creating meaningful solutions
+        rather than being confined to any specific niche or trend.
       </h2>
     </section>
 

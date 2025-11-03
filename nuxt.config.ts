@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/color-mode',
   ],
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css', '~/assets/css/styles.css'],
   vite: {
     plugins: [
       tailwindcss(),
@@ -85,9 +85,9 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://okikelabs.com',
-    name: 'Okikelabs | Proud makers of great software',
+    name: 'Okike Labs | Proud makers of great software',
     description:
-      'Okikelabs is a startup studio that specializes in building products with a global reach.',
+      'Okike Labs is a startup studio that specializes in building products with a global reach.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
 })

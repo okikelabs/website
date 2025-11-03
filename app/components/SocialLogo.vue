@@ -1,10 +1,4 @@
 <script setup lang="ts">
-// interface Props {
-//   href: string
-//   icon: string
-//   alt: string
-// }
-
 interface Brand {
   name: string
   url: string
@@ -22,13 +16,7 @@ defineProps<Props>()
 <template>
   <li v-for="brand in brands" :key="brand.name">
     <a :href="brand.url" target="_blank" rel="nofollow noopener noreferrer">
-      <img
-        class="flex"
-        :alt="brand.alt"
-        :src="`/brands/${brand.logo}`"
-        width="32"
-        height="32"
-      />
+      <img class="flex" :alt="brand.alt" :src="`/brands/${brand.logo}`" width="32" height="32" />
     </a>
   </li>
 </template>

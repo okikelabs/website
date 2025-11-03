@@ -8,7 +8,7 @@ const { data: page } = await useAsyncData(route.path, () => {
 const { title, description } = page.value ?? ({} as any)
 
 useSeoMeta({
-  titleTemplate: '%s | Okikelabs Blog',
+  titleTemplate: '%s | Okike Labs Blog',
   title,
   description,
   ogType: 'article',
@@ -18,7 +18,7 @@ useSeoMeta({
 <template>
   <main class="prose mx-auto">
     <article>
-      <h1 class="text-5xl! md:text-center">{{ page?.title }}</h1>
+      <h1 class="text-4xl! md:text-center">{{ page?.title }}</h1>
       <ContentRenderer v-if="page" :value="page" class="text-[18px]" />
     </article>
   </main>
