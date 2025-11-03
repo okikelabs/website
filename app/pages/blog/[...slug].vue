@@ -3,7 +3,11 @@ import { formatDate } from '@@/lib/utils'
 
 const route = useRoute()
 
+console.log(route.params.slug)
+
 const slug = route.path.split('/').pop()
+
+console.log(slug)
 
 const { data: page } = await useAsyncData(`blog-${slug}`, () => {
   return queryCollection('blog').where('slug', '=', route.path.split('/').pop()).first()
