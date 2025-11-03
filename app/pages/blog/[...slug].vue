@@ -3,11 +3,15 @@ import { formatDate } from '@@/lib/utils'
 
 const route = useRoute()
 
-const { data: page } = await useAsyncData(route.path, () => {
+const slug = route.path.split('/').pop()
+
+const { data: page } = await useAsyncData(`blog-${slug}`, () => {
   return queryCollection('blog').where('slug', '=', route.path.split('/').pop()).first()
 })
 
-const { title, description, author, readingTime, sitemap } = page.value ?? ({} as any)
+// const { title, description, author, readingTime, sitemap } = page.value ?? ({} as any)
+
+const { title, description, author } = page.value ?? ({} as any)
 
 console.log(page.value)
 
@@ -28,7 +32,7 @@ useSeoMeta({
   <main class="prose mx-auto">
     <article>
       <p class="text-gray-600 text-sm text-center mb-1">
-        {{ 'Last updated on ' + formatDate(sitemap.lastmod) }}
+        <!-- {{ 'Last updated on ' + formatDate(sitemap.lastmod) }} -->
       </p>
 
       <h1 class="text-4xl! md:text-center">{{ title }}</h1>
