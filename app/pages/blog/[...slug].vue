@@ -11,10 +11,10 @@ const { title, description, author, readingTime, sitemap } = page.value ?? ({} a
 
 console.log(page.value)
 
-const readingTimeLabel = computed(() => {
-  if (!readingTime) return ''
-  return `${readingTime} min${readingTime > 1 ? 's' : ''} read`
-})
+// const readingTimeLabel = computed(() => {
+//   if (!readingTime) return ''
+//   return `${readingTime} min${readingTime > 1 ? 's' : ''} read`
+// })
 
 useSeoMeta({
   titleTemplate: '%s | Okike Labs Blog',
@@ -46,7 +46,7 @@ useSeoMeta({
 
         <span class="text-gray-500">•</span>
 
-        <span v-if="readingTimeLabel" class="text-gray-600 text-sm flex items-center gap-1">
+        <!-- <span v-if="readingTimeLabel" class="text-gray-600 text-sm flex items-center gap-1">
           <svg
             data-testid="geist-icon"
             height="16"
@@ -65,8 +65,8 @@ useSeoMeta({
           </svg>
           <span>
             {{ readingTimeLabel }}
-          </span>
-        </span>
+          </span> 
+        </span> -->
       </div>
 
       <ContentRenderer v-if="page" :value="page" class="text-[18px]" />

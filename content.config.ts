@@ -15,7 +15,7 @@ export default defineContentConfig({
           author: z.array(z.string()),
           slug: z.string(),
           category: z.string(),
-          readingTime: z.number(),
+          // readingTime: z.number(),
           image: z.object({
             src: z.string(),
             alt: z.string(),

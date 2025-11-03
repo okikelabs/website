@@ -78,17 +78,17 @@ export default defineNuxtConfig({
      */
     componentDir: '~/components/ui',
   },
-  hooks: {
-    'content:file:afterParse'(ctx) {
-      const { file, content } = ctx;
+  // hooks: {
+  //   'content:file:afterParse'(ctx) {
+  //     const { file, content } = ctx;
 
-      const wordsPerMinute = 180;
-      const text = typeof file.body === 'string' ? file.body : '';
-      const wordCount = text.split(/\s+/).length;
+  //     const wordsPerMinute = 180;
+  //     const text = typeof file.body === 'string' ? file.body : '';
+  //     const wordCount = text.split(/\s+/).length;
 
-      content.readingTime = Math.ceil(wordCount / wordsPerMinute);
-    }
-  },
+  //     content.readingTime = Math.ceil(wordCount / wordsPerMinute);
+  //   }
+  // },
   site: {
     url: 'https://okikelabs.com',
     name: 'Okike Labs | Proud makers of great software',
