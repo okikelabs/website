@@ -10,11 +10,12 @@ export default defineContentConfig({
         schema: z.object({
           title: z.string(),
           description: z.string(),
-          draft: z.boolean().default(false),
+          draft: z.boolean().default(true),
           date: z.date(),
           author: z.array(z.string()),
           slug: z.string(),
           category: z.string(),
+          readingTime: z.number(),
           image: z.object({
             src: z.string(),
             alt: z.string(),

@@ -1,13 +1,14 @@
 ---
 title: 'One Year of Building Okike Labs'
-description: 'A raw reflection on our first year building Okike Labs — what worked, what didn’t, and what we learned.'
+description: 'A raw reflection on our first year building Okike Labs, what worked, what didn’t, and what we learned.'
 draft: false
 date: 2025-11-03
-lastmod: ''
 author: ['Emmanuel Raymond']
 slug: 'one-year-of-building-okikelabs'
 category: 'Company'
 image: { src: 'placeholder.png', alt: 'Placeholder image' }
+sitemap:
+  lastmod: 2025-11-03
 ---
 
 Okike Labs turned one in August. It doesn’t feel like a big milestone — It just feels like time passed. One year of trying to figure out what we’re building, what we’re doing and who we are.

@@ -8,6 +8,9 @@ author: ['Emmanuel Raymond']
 slug: 'nuxt-saas-kit'
 category: 'Product'
 image: { src: 'placeholder.png', alt: 'Placeholder image' }
+
+sitemap:
+  lastmod: 2024-10-14
 ---
 
 At Okike Labs, we pride ourselves on building diverse products that solve real-world problems. As part of this vision, we are excited to announce the launch of [Nuxt SaaS Kit](https://nuxtsaaskit.com/), a comprehensive SaaS starter kit designed to save you time and effort in building your next SaaS project.

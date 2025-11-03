@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { formatDate } from '@@/lib/utils'
 defineProps<{
   post: {
     slug: string
@@ -9,15 +10,6 @@ defineProps<{
     category?: string
   }
 }>()
-
-const formatDate = (dateStr: string): string => {
-  const date = new Date(dateStr)
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-}
 </script>
 
 <template>

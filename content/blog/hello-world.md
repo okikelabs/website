@@ -8,6 +8,9 @@ author: ['Emmanuel Raymond', 'Tochukwu Alor']
 slug: 'hello-world'
 category: 'Announcement'
 image: { src: 'placeholder.png', alt: 'Placeholder image' }
+
+sitemap:
+  lastmod: 2024-08-19
 ---
 
 Every great story starts with a simple idea. For us at Okike Labs, it began with the belief that we could build something meaningful, something that matters, without waiting for permission or perfect conditions, unhindered by location or circumstance.
