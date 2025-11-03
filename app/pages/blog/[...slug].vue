@@ -19,7 +19,7 @@ console.log(slugParam)
 // })
 
 const { data: page } = await useAsyncData(
-  () => `blog:${slugParam.value}`,
+  () => route.path,
   () => queryCollection('blog').where('slug', '=', slugParam.value).first()
 )
 
