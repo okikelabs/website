@@ -9,8 +9,6 @@ const { data: page } = await useAsyncData(route.path, () => {
 
 const { title, description, author, readingTime, sitemap } = page.value ?? ({} as any)
 
-console.log(page.value)
-
 const readingTimeLabel = computed(() => {
   if (!readingTime) return ''
   return `${readingTime} min${readingTime > 1 ? 's' : ''} read`
