@@ -3,21 +3,31 @@ import { formatDate } from '@@/lib/utils'
 
 const route = useRoute()
 
-console.log(route.params.slug)
+// console.log(route.params.slug)
 
-const slug = route.path.split('/').pop()
+// const slug = route.path.split('/').pop()
 
-console.log(slug)
-
-const { data: page } = await useAsyncData(`blog-${slug}`, () => {
-  return queryCollection('blog').where('slug', '=', route.path.split('/').pop()).first()
+const slugParam = computed(() => {
+  const s = route.params.slug as string | string[] | undefined
+  return Array.isArray(s) ? s[s.length - 1] : s
 })
+
+console.log(slugParam)
+
+// const { data: page } = await useAsyncData(`blog-${slug}`, () => {
+//   return queryCollection('blog').where('slug', '=', route.path.split('/').pop()).first()
+// })
+
+const { data: page } = await useAsyncData(
+  () => `blog:${slugParam.value}`,
+  () => queryCollection('blog').where('slug', '=', slugParam.value).first()
+)
 
 // const { title, description, author, readingTime, sitemap } = page.value ?? ({} as any)
 
 const { title, description, author } = page.value ?? ({} as any)
 
-console.log(page.value)
+// console.log(page.value)
 
 // const readingTimeLabel = computed(() => {
 //   if (!readingTime) return ''
