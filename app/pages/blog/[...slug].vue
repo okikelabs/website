@@ -9,6 +9,8 @@ const { data: page } = await useAsyncData(route.path, () => {
 
 const { title, description, author, readingTime, sitemap } = page.value ?? ({} as any)
 
+// console.log(page.value)
+
 const readingTimeLabel = computed(() => {
   if (!readingTime) return ''
   return `${readingTime} min${readingTime > 1 ? 's' : ''} read`
@@ -44,7 +46,7 @@ useSeoMeta({
 
         <span class="text-gray-500">•</span>
 
-        <span class="text-gray-600 text-sm flex items-center gap-1">
+        <span v-if="readingTimeLabel" class="text-gray-600 text-sm flex items-center gap-1">
           <svg
             data-testid="geist-icon"
             height="16"
