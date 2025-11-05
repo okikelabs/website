@@ -3,7 +3,6 @@ title: 'Hello World'
 description: 'Announcing the launch of Okike Labs, a bootstrapped sartup studio.'
 draft: false
 date: '2024-08-19'
-lastmod: ''
 author: ['Emmanuel Raymond', 'Tochukwu Alor']
 slug: 'hello-world'
 category: 'Announcement'

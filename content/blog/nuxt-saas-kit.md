@@ -3,7 +3,6 @@ title: 'Introducing Nuxt SaaS Kit'
 description: 'The scalable and production-ready Nuxt SaaS starter kit'
 draft: false
 date: '2024-10-14'
-lastmod: ''
 author: ['Emmanuel Raymond']
 slug: 'nuxt-saas-kit'
 category: 'Product'
