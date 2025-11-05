@@ -3,30 +3,41 @@ import { formatDate } from '@@/lib/utils'
 
 const route = useRoute()
 
-const slug = route.path.split('/').pop()
-
+// Get slug directly from params, with proper fallback
 const slugParam = computed(() => {
   const s = route.params.slug as string | string[] | undefined
-  return Array.isArray(s) ? s[s.length - 1] : s
+  if (Array.isArray(s)) {
+    return s[s.length - 1]
+  }
+  return s || route.path.split('/').pop() || ''
 })
 
-console.log(slugParam)
-
-// const { data: page } = await useAsyncData(`blog-${slug}`, () => {
-//   return queryCollection('blog').where('slug', '=', route.path.split('/').pop()).first()
-// })
-
-const { data: page } = await useAsyncData(
-  () => `blog-${slugParam.value}`,
+// Fetch the blog post with proper key (string, not function)
+const { data: page, error } = await useAsyncData(
+  `blog-${slugParam.value}`, // Key should be a static string
   () => queryCollection('blog').where('slug', '=', slugParam.value).first()
 )
 
-const { title, description, author, sitemap, readingTime } = page.value ?? ({} as any)
+// Handle error or missing page
+if (error.value || !page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Blog post not found',
+    fatal: true,
+  })
+}
 
-console.log(page.value)
+// Safe destructuring with defaults
+const {
+  title = 'Untitled',
+  description = '',
+  author = 'Unknown',
+  sitemap = null,
+  readingTime = 0,
+} = page.value || {}
 
 const readingTimeLabel = computed(() => {
-  if (!readingTime) return ''
+  if (!readingTime || readingTime <= 0) return ''
   return `${readingTime} min${readingTime > 1 ? 's' : ''} read`
 })
 
@@ -41,8 +52,8 @@ useSeoMeta({
 <template>
   <main class="prose mx-auto">
     <article>
-      <p class="text-gray-600 text-sm text-center mb-1">
-        {{ 'Last updated on ' + formatDate(sitemap?.lastmod) }}
+      <p v-if="sitemap?.lastmod" class="text-gray-600 text-sm text-center mb-1">
+        {{ 'Last updated on ' + formatDate(sitemap.lastmod) }}
       </p>
 
       <h1 class="text-4xl! md:text-center">{{ title }}</h1>
@@ -53,9 +64,7 @@ useSeoMeta({
             <AvatarImage src="/raymond.jpg" alt="Emmanuel Raymond" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          <span>
-            {{ '' + author }}
-          </span>
+          <span>{{ '' + author }}</span>
         </span>
 
         <span class="text-gray-500">•</span>
@@ -77,9 +86,7 @@ useSeoMeta({
               fill="currentColor"
             ></path>
           </svg>
-          <span>
-            {{ readingTimeLabel }}
-          </span>
+          <span>{{ readingTimeLabel }}</span>
         </span>
       </div>
 
