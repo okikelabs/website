@@ -10,16 +10,23 @@ const slugParam = computed(() => {
   return Array.isArray(s) ? s[s.length - 1] : s
 })
 
-console.log(slugParam)
+// const { data: page } = await useAsyncData(
+//   () => `blog-${slugParam.value}`,
+//   () => queryCollection('blog').where('slug', '=', slugParam.value).first()
+// )
 
-// const { data: page } = await useAsyncData(`blog-${slug}`, () => {
-//   return queryCollection('blog').where('slug', '=', route.path.split('/').pop()).first()
-// })
-
-const { data: page } = await useAsyncData(
+const { data: page, refresh } = await useAsyncData(
   () => `blog-${slugParam.value}`,
-  () => queryCollection('blog').where('slug', '=', slugParam.value).first()
+  () => {
+    if (!slugParam.value) return Promise.resolve(null)
+    return queryCollection('blog').where('slug', '=', slugParam.value).first()
+  },
+  { watch: [slugParam] }
 )
+
+watchEffect(() => {
+  if (!page.value) refresh()
+})
 
 const { title, description, author, sitemap, readingTime } = page.value ?? ({} as any)
 
