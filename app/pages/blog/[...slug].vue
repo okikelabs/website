@@ -20,19 +20,19 @@ console.log(slugParam)
 
 const { data: page } = await useAsyncData(
   () => route.path,
-  () => queryCollection('blog').where('slug', '=', slugParam.value).first()
+  () => queryCollection('blog').where('slug', '=', route.path.split('/').pop()).first()
 )
 
 // const { title, description, author, readingTime, sitemap } = page.value ?? ({} as any)
 
-const { title, description, author } = page.value ?? ({} as any)
+const { title, description, author, sitemap, readingTime } = page.value ?? ({} as any)
 
-// console.log(page.value)
+console.log(page.value)
 
-// const readingTimeLabel = computed(() => {
-//   if (!readingTime) return ''
-//   return `${readingTime} min${readingTime > 1 ? 's' : ''} read`
-// })
+const readingTimeLabel = computed(() => {
+  if (!readingTime) return ''
+  return `${readingTime} min${readingTime > 1 ? 's' : ''} read`
+})
 
 useSeoMeta({
   titleTemplate: '%s | Okike Labs Blog',
@@ -46,7 +46,7 @@ useSeoMeta({
   <main class="prose mx-auto">
     <article>
       <p class="text-gray-600 text-sm text-center mb-1">
-        <!-- {{ 'Last updated on ' + formatDate(sitemap.lastmod) }} -->
+        {{ 'Last updated on ' + formatDate(sitemap.lastmod) }}
       </p>
 
       <h1 class="text-4xl! md:text-center">{{ title }}</h1>
@@ -64,7 +64,7 @@ useSeoMeta({
 
         <span class="text-gray-500">•</span>
 
-        <!-- <span v-if="readingTimeLabel" class="text-gray-600 text-sm flex items-center gap-1">
+        <span v-if="readingTimeLabel" class="text-gray-600 text-sm flex items-center gap-1">
           <svg
             data-testid="geist-icon"
             height="16"
@@ -83,8 +83,8 @@ useSeoMeta({
           </svg>
           <span>
             {{ readingTimeLabel }}
-          </span> 
-        </span> -->
+          </span>
+        </span>
       </div>
 
       <ContentRenderer v-if="page" :value="page" class="text-[18px]" />
