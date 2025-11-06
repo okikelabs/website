@@ -3,30 +3,30 @@ import { formatDate } from '@@/lib/utils'
 
 const route = useRoute()
 
-const slug = route.path.split('/').pop()
+// const slug = route.path.split('/').pop()
 
 const slugParam = computed(() => {
   const s = route.params.slug as string | string[] | undefined
   return Array.isArray(s) ? s[s.length - 1] : s
 })
 
-// const { data: page } = await useAsyncData(
-//   () => `blog-${slugParam.value}`,
-//   () => queryCollection('blog').where('slug', '=', slugParam.value).first()
-// )
-
-const { data: page, refresh } = await useAsyncData(
+const { data: page } = await useAsyncData(
   () => `blog-${slugParam.value}`,
-  () => {
-    if (!slugParam.value) return Promise.resolve(null)
-    return queryCollection('blog').where('slug', '=', slugParam.value).first()
-  },
-  { watch: [slugParam] }
+  () => queryCollection('blog').where('slug', '=', slugParam.value).first()
 )
 
-watchEffect(() => {
-  if (!page.value) refresh()
-})
+// const { data: page, refresh } = await useAsyncData(
+//   () => `blog-${slugParam.value}`,
+//   () => {
+//     if (!slugParam.value) return Promise.resolve(null)
+//     return queryCollection('blog').where('slug', '=', slugParam.value).first()
+//   },
+//   { watch: [slugParam] }
+// )
+
+// watchEffect(() => {
+//   if (!page.value) refresh()
+// })
 
 const { title, description, author, sitemap, readingTime } = page.value ?? ({} as any)
 
