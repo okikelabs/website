@@ -1,45 +1,32 @@
-# Dockerfile with npm for Nuxt - v1.2.2
-# https://gist.github.com/sandros94/03675514546f17af1fd6db3863c043b4
+FROM node:22-alpine AS builder
 
-# Base configuration
-ARG node_tag=22-alpine
-FROM node:${node_tag} AS base
+# Installer les dépendances système nécessaires
+RUN apk add --no-cache libc6-compat
+
 WORKDIR /app
 
-# Builder
-FROM base AS builder
-# ENV PNPM_HOME="/pnpm"
-# ENV PATH="$PNPM_HOME:$PATH"
+COPY package.json package-lock.json* ./
 
-COPY package.json package-lock.json* /app/
-RUN npm ci --include=dev
-# RUN npm i -g --force corepack && corepack enable
-
-# RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
-# pnpm install --frozen-lockfile --shamefully-hoist --ignore-scripts=false
-
-ARG NUXT_PUBLIC_URL=https://okikelabs.com
-ARG NUXT_PUBLIC_NAME=Okikelabs
+RUN npm install -g npm@latest && \
+    npm ci
 
 COPY . .
-RUN --mount=type=cache,id=nuxt,target=/app/node_modules/.cache/nuxt/.nuxt \
-  npm run build
-# pnpm run build
 
-# Final production container
-FROM base AS runtime
-ARG NODE_ENV=production
-ENV NODE_ENV=${NODE_ENV}
+RUN npm run build
 
-# Convert build args to runtime environment variables
-ENV NUXT_PUBLIC_URL=${NUXT_PUBLIC_URL}
-ENV NUXT_PUBLIC_NAME=${NUXT_PUBLIC_NAME}
+FROM node:22-alpine AS runner
 
-USER node
+RUN apk add --no-cache curl
+
+WORKDIR /app
+
+COPY --from=builder /app/.output /app/.output
+COPY --from=builder /app/package.json /app/package.json
+
+ENV NODE_ENV=production
+ENV HOST=0.0.0.0
+ENV PORT=3000
+
 EXPOSE 3000
-HEALTHCHECK  --retries=10 --start-period=5s \
-  CMD wget --no-verbose --spider http://0.0.0.0:3000/ || exit 1
 
-COPY --link --from=builder /app/.output/  ./
-
-ENTRYPOINT [ "node", "server/index.mjs" ]
+CMD ["node", ".output/server/index.mjs"]
