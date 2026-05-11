@@ -8,6 +8,14 @@ export default [
     year: '2024',
     status: 'active',
   },
+  {
+    title: 'Letterly',
+    description: 'Write a letter to your future self.',
+    url: 'https://useletterly.com?ref=okikelabs',
+    icon: 'letterly.svg',
+    year: '2026',
+    status: 'active',
+  },
   // {
   //   title: 'Linkvoy',
   //   description: 'Everything you need to plan weddings without the chaos for professionals.',
