@@ -13,13 +13,21 @@ const { data: page } = await useAsyncData(
   () => queryCollection('blog').where('slug', '=', slugParam.value).first()
 )
 
-const { title, description, author, sitemap, readingTime } = page.value ?? ({} as any)
-
-console.log(page.value)
+const { title, description, author, readingTime } = page.value ?? ({} as any)
 
 const readingTimeLabel = computed(() => {
   if (!readingTime) return ''
   return `${readingTime} min${readingTime > 1 ? 's' : ''} read`
+})
+
+const lastUpdatedLabel = computed(() => {
+  const lastmod = page.value?.sitemap?.lastmod
+  if (!lastmod) return ''
+
+  const date = new Date(lastmod as string | Date)
+  if (Number.isNaN(date.getTime())) return ''
+
+  return `Last updated on ${formatDate(date.toISOString())}`
 })
 
 useSeoMeta({
@@ -33,8 +41,8 @@ useSeoMeta({
 <template>
   <main class="prose mx-auto">
     <article>
-      <p class="text-gray-600 text-sm text-center mb-1">
-        {{ 'Last updated on ' + formatDate(sitemap.lastmod) }}
+      <p v-if="lastUpdatedLabel" class="text-gray-600 text-sm text-center mb-1">
+        {{ lastUpdatedLabel }}
       </p>
 
       <h1 class="text-4xl! md:text-center">{{ title }}</h1>
